@@ -1,5 +1,5 @@
 ---
-title: DiffSinger: Diffusion for Singing Voice Synthesis
+title: DiffSinger🎶 Diffusion for Singing Voice Synthesis
 emoji: 🎶
 colorFrom: purple
 colorTo: blue
