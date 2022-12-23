@@ -24,4 +24,4 @@ example_inputs:
 #exp_name: 0303_opencpop_ds58_midi
 
 inference_cls: inference.svs.ds_e2e.DiffSingerE2EInfer
-exp_name: 0228_opencpop_ds100_rel
+exp_name: 0831_opencpop_ds1000
