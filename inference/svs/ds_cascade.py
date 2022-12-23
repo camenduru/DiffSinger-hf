@@ -52,3 +52,5 @@ if __name__ == '__main__':
         'input_type': 'phoneme'
     }  # input like Opencpop dataset.
     DiffSingerCascadeInfer.example_run(inp)
+
+# # CUDA_VISIBLE_DEVICES=1 python inference/svs/ds_cascade.py --config usr/configs/midi/cascade/opencs/ds60_rel.yaml --exp_name 0303_opencpop_ds58_midi

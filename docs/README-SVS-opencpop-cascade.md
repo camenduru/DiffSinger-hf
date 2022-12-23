@@ -3,7 +3,7 @@
 [![GitHub Stars](https://img.shields.io/github/stars/MoonInTheRiver/DiffSinger?style=social)](https://github.com/MoonInTheRiver/DiffSinger)
 [![downloads](https://img.shields.io/github/downloads/MoonInTheRiver/DiffSinger/total.svg)](https://github.com/MoonInTheRiver/DiffSinger/releases)
 
-## DiffSinger (MIDI version SVS)
+## DiffSinger (MIDI SVS | A version)
 ### 0. Data Acquirement
 For Opencpop dataset: Please strictly follow the instructions of [Opencpop](https://wenet.org.cn/opencpop/). We have no right to give you the access to Opencpop.
 
@@ -67,7 +67,7 @@ CUDA_VISIBLE_DEVICES=0 python tasks/run.py --config usr/configs/midi/cascade/ope
 
 Remember to adjust the "fs2_ckpt" parameter in `usr/configs/midi/cascade/opencs/ds60_rel.yaml` to fit your path.
 
-### 3. Inference Example
+### 3. Inference from packed test set
 ```sh
 CUDA_VISIBLE_DEVICES=0 python tasks/run.py --config usr/configs/midi/cascade/opencs/ds60_rel.yaml --exp_name $MY_DS_EXP_NAME --reset --infer
 ```
@@ -82,7 +82,7 @@ Remember to put the pre-trained models in `checkpoints` directory.
 
 ### 4. Inference from raw inputs
 ```sh
-python inference/svs/ds_e2e.py --config usr/configs/midi/cascade/opencs/ds60_rel.yaml --exp_name $MY_DS_EXP_NAME
+python inference/svs/ds_cascade.py --config usr/configs/midi/cascade/opencs/ds60_rel.yaml --exp_name $MY_DS_EXP_NAME
 ```
 Raw inputs:
 ```

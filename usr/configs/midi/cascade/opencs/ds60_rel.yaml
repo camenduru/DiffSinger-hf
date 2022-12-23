@@ -24,10 +24,11 @@ fs2_ckpt: 'checkpoints/0302_opencpop_fs_midi/model_ckpt_steps_160000.ckpt'  #
 task_cls: usr.diffsinger_task.DiffSingerMIDITask
 
 K_step: 60
-max_tokens: 40000
+max_tokens: 36000
 predictor_layers: 5
 dilation_cycle_length: 4  # *
 rel_pos: true
 dur_predictor_layers: 5  # *
 max_updates: 160000
 gaussian_start: false
+mask_uv_prob: 0.15
