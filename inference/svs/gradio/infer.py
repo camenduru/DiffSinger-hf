@@ -77,7 +77,7 @@ class GradioInfer:
                              article=self.article,
                              examples=example_inputs,
                              enable_queue=True)
-                             iface.launch()
+        iface.launch()
 
 
 if __name__ == '__main__':
